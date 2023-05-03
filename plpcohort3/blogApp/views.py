@@ -27,4 +27,4 @@ def article(request):
     context = {
         "articles": posts
     }
-    return render(request, "home.html", context)
+    return render(request, "posts.html", context)
