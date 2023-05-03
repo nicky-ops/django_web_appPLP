@@ -16,12 +16,12 @@ posts = [
     },
     {
         'author': 'Jane',
-        'title': 'Blog post 1',
+        'title': 'Blog post 2',
         'content': 'First post content',
         'date': 'August 1, 2020'
     }
 ]
 def article(request):
-    return render(request, 'post.html', {
+    return render(request, 'posts.html', {
         "articles": posts,
     })
