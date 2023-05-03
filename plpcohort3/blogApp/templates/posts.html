@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogB | {{title}}</title>
+</head>
+<body>
+    {%for article in articles %}
+        <p>{{article.title}}</p>
+        <article style="background-color: burlywood;">
+            <b><em style="color: darkslateblue;">Written by <i>{{article.author}}</i> and Posted on {{article.date}}</em></b>
+            <p>
+                {{article.content}}
+            </p>
+            <hr>
+        </article>
+
+    {%endfor%}
+</body>
+</html>
