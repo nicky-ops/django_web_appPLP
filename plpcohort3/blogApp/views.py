@@ -28,3 +28,6 @@ def article(request):
         "articles": posts
     }
     return render(request, "posts.html", context)
+
+def articles_details(request,pk):
+    post = Post.objects.get(pk=pk)
