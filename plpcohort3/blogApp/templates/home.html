@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti perferendis nihil exercitationem doloribus minima voluptatum mollitia! Impedit quae porro ipsum harum enim maxime adipisci, dolor, magnam numquam vel commodi id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ullam perspiciatis accusantium corporis ipsam earum doloremque deserunt itaque maiores, fuga dolor harum numquam. Suscipit sunt dolorem dolore ab dolores deserunt!</p>
-</body>
-</html>
+{% extends 'base.html'%}
+{% block title %} Homepage {% endblock %}
+{% block content %}
+<h1>MY BLOG</h1>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate rerum similique voluptas necessitatibus qui voluptatibus nesciunt at molestiae enim? Veritatis numquam, consectetur tempore quaerat quisquam deleniti rerum blanditiis eaque.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt iure architecto odio, consectetur a doloribus. Ex, rem pariatur! Quam nihil quo aliquid sed accusamus nulla eum optio reprehenderit accusantium voluptatibus.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum neque voluptate ratione porro laborum provident ipsam saepe, nam excepturi adipisci sint nobis soluta expedita corrupti cum eveniet molestias, nulla animi?
+  </p>
+  {% endblock %}
