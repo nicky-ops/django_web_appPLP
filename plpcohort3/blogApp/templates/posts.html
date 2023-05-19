@@ -2,13 +2,17 @@
 {% block title %} Articles {% endblock %}
 
 {% block content %}
-    {% for article in articles %}
-        <p>{{article.title}}</p>
+    <h3><a href="{% url 'create' %}">Click Here</a>to create your post</h3>
+    {% for post in articles %}
+    <a href="{% url 'details' post.id %}">{{ post.title }}</a>
         <article style="background-color: burlywood;">
-            <b><em style="color: darkslateblue;">Written by <i>{{article.author}}</i> and Posted on {{article.date}}</em></b>
+            <b><em style="color: darkslateblue;">Written by <i>{{post.author}}</i> and Posted on {{post.date}}</em></b>
             <p>
-                {{article.content}}
+                {{post.content}}
             </p>
+            <h6>
+                <a href="{% url 'update' post.id%}">Update</a>
+            </h6>
             <hr>
         </article>
 

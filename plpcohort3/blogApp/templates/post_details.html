@@ -2,4 +2,13 @@
 {% block title %} Homepage {% endblock %}
 {% block content %}
 <h1>Post No: {{ post.id}}</h1>
+<div>
+    <a href="{% url 'details' post.id %}">{{ post.title }} Written by {{ post.author }} on {{ post.date }}</a>
+    <p>
+        {{ post.content }}
+    </p>
+    <a href="{% url 'articles'%}"><input type="button" value="Go Back"></a>
+    
+</div>
+
 {% endblock %}
